@@ -1,0 +1,22 @@
+language: go
+go:
+- 1.10.x
+notifications:
+    email: false
+before_install:
+  - go get -u github.com/kardianos/govendor
+install:
+  -
+script:
+  - make dnsprobe
+before_deploy:
+  - git config --local user.name "Arnaud"
+  - git config --local user.email "shine@achamo.net"
+  - git tag "$(git describe --tag)" || true
+deploy:
+  provider: releases
+  api_key:
+    secure: ClMDyuttxyOXR11Hv1ZVnsgWLAUNod9v42ijlMN2Wbhy0x4gfhkXfjbuY5327N04RrAGui5yWoIBpqSy8Fx+l9MA6bjj2WaNYpwUVxN8Iknq5/9YNOBgqg7JpujLuqKjiJjmdKxbErYqXnoPjZxtQCsMttiKXNygDie7+mZegz7/yRDlhBodQ0McJLxZMSo9FeJT0iIEp9S9RMRA9HD1FqkZppcLUVJvWA5fWsW0KFFcJUqLPyjBZGlfXnSwIbmJiEYUfvWD1wI8roXCoOmcloM3EfV2vvSzT2cEGGkw9wWVqRoaFxBn/wShll5+73+Cp42QinXXzORhVjkinv/kjRoZE7VCf8KIJ0nuzvSJmaE2icvh58iSFHaciecV3g7RMu8MxhLmDqoqEWvWBmFqTk7o3En3tzwrPGXtL8AUhCJAxCeQ+CCxLAJPxYZ/tAhZ4dzppnatqM028mzClNl+ZNYu6eDSgfA7aUqm+sWrFyoOJYexzLOu2dc5SFB/rdh5BnrK86lEEd+/MiVdP42X4Abhtuky59LxT7usyLkkI1WCfP4IVRbQv3YIgWpduM6DSHlG69SPOcAuXehxN0LUpS/6EDq+7F759I3NxNP/wR9uyjqhH/T82WfQOdmMXXqoYkWl/FFLe0YJfHy/i8P7DarTzDc1dGkE9+wMFljgonI=
+  file:
+    - dnsprobe
+  skip_cleanup: true
