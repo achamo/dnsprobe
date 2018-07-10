@@ -1,0 +1,62 @@
+{
+	"comment": "",
+	"ignore": "test",
+	"package": [
+		{
+			"checksumSHA1": "Pw89zi42/CNBHt4ntcqsVy4IFSw=",
+			"path": "github.com/miekg/dns",
+			"revision": "3e6e47bc11bc7f93f9e2f1c7bd6481ba4802808b",
+			"revisionTime": "2018-07-01T18:37:35Z"
+		},
+		{
+			"checksumSHA1": "2LpxYGSf068307b7bhAuVjvzLLc=",
+			"origin": "github.com/miekg/dns/vendor/golang.org/x/crypto/ed25519",
+			"path": "golang.org/x/crypto/ed25519",
+			"revision": "3e6e47bc11bc7f93f9e2f1c7bd6481ba4802808b",
+			"revisionTime": "2018-07-01T18:37:35Z"
+		},
+		{
+			"checksumSHA1": "0JTAFXPkankmWcZGQJGScLDiaN8=",
+			"origin": "github.com/miekg/dns/vendor/golang.org/x/crypto/ed25519/internal/edwards25519",
+			"path": "golang.org/x/crypto/ed25519/internal/edwards25519",
+			"revision": "3e6e47bc11bc7f93f9e2f1c7bd6481ba4802808b",
+			"revisionTime": "2018-07-01T18:37:35Z"
+		},
+		{
+			"checksumSHA1": "NjyXtXsaf0ulRJn6HQSP1FqGL4A=",
+			"origin": "github.com/miekg/dns/vendor/golang.org/x/net/bpf",
+			"path": "golang.org/x/net/bpf",
+			"revision": "3e6e47bc11bc7f93f9e2f1c7bd6481ba4802808b",
+			"revisionTime": "2018-07-01T18:37:35Z"
+		},
+		{
+			"checksumSHA1": "8oJoT8rfokzpkJ19eNhRs2JgRxI=",
+			"origin": "github.com/miekg/dns/vendor/golang.org/x/net/internal/iana",
+			"path": "golang.org/x/net/internal/iana",
+			"revision": "3e6e47bc11bc7f93f9e2f1c7bd6481ba4802808b",
+			"revisionTime": "2018-07-01T18:37:35Z"
+		},
+		{
+			"checksumSHA1": "YsXlbexuTtUXHyhSv927ILOkf6A=",
+			"origin": "github.com/miekg/dns/vendor/golang.org/x/net/internal/socket",
+			"path": "golang.org/x/net/internal/socket",
+			"revision": "3e6e47bc11bc7f93f9e2f1c7bd6481ba4802808b",
+			"revisionTime": "2018-07-01T18:37:35Z"
+		},
+		{
+			"checksumSHA1": "sO3eKeIVIRXaRtmWbqGihYpJXpg=",
+			"origin": "github.com/miekg/dns/vendor/golang.org/x/net/ipv4",
+			"path": "golang.org/x/net/ipv4",
+			"revision": "3e6e47bc11bc7f93f9e2f1c7bd6481ba4802808b",
+			"revisionTime": "2018-07-01T18:37:35Z"
+		},
+		{
+			"checksumSHA1": "xqt5auCDSuvg5dm07p60loM67/A=",
+			"origin": "github.com/miekg/dns/vendor/golang.org/x/net/ipv6",
+			"path": "golang.org/x/net/ipv6",
+			"revision": "3e6e47bc11bc7f93f9e2f1c7bd6481ba4802808b",
+			"revisionTime": "2018-07-01T18:37:35Z"
+		}
+	],
+	"rootPath": "git.achamo.net/shine/dnsprobe"
+}
