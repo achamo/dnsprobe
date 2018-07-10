@@ -43,8 +43,8 @@ func main() {
 			if err != nil || r.Rcode != dns.RcodeSuccess {
 				success = 0
 			}
-			fmt.Printf("PUTVAL %s/godnsprobe-%s/gauge-time/%s-%s interval=%d N:%.6f\n", namespace, protocol, strings.Replace(name, ".", "_", -1), record_type, interval, rtt.Seconds())
-			fmt.Printf("PUTVAL %s/godnsprobe-%s/gauge-success/%s-%s interval=%d N:%d\n", namespace, protocol, strings.Replace(name, ".", "_", -1), record_type, interval, success)
+			fmt.Printf("PUTVAL %s/dnsprobe-%s/gauge-time/%s-%s interval=%d N:%.6f\n", namespace, protocol, strings.Replace(name, ".", "_", -1), record_type, interval, rtt.Seconds())
+			fmt.Printf("PUTVAL %s/dnsprobe-%s/gauge-success/%s-%s interval=%d N:%d\n", namespace, protocol, strings.Replace(name, ".", "_", -1), record_type, interval, success)
 		}
 		duration, _ := time.ParseDuration(fmt.Sprintf("%ds", interval))
 		time.Sleep(duration)
